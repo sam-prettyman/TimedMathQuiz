@@ -54,6 +54,7 @@
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timeWarning = new System.Windows.Forms.Label();
+            this.timeLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -323,12 +324,22 @@
             this.timeWarning.TabIndex = 21;
             this.timeWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timeLabel1
+            // 
+            this.timeLabel1.AutoSize = true;
+            this.timeLabel1.Location = new System.Drawing.Point(185, 359);
+            this.timeLabel1.Name = "timeLabel1";
+            this.timeLabel1.Size = new System.Drawing.Size(46, 17);
+            this.timeLabel1.TabIndex = 22;
+            this.timeLabel1.Text = "label3";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 432);
+            this.Controls.Add(this.timeLabel1);
             this.Controls.Add(this.timeWarning);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
@@ -356,7 +367,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Math Quiz";
+            this.Text = "Samuel Prettyman Math Quiz";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
@@ -394,6 +405,7 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label timeWarning;
+        private System.Windows.Forms.Label timeLabel1;
     }
 }
 

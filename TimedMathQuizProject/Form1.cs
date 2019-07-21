@@ -44,6 +44,7 @@ namespace TimedMathQuizProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timeLabel1.Text = DateTime.Now.ToLongDateString();
 
         }
 
